@@ -2,7 +2,7 @@
 
 # Vue Todo App
 
-Live demo : -
+Live demo : - https://vue-todo-blush-eight.now.sh/
 
 ### Start app
 
