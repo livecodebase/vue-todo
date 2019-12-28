@@ -34,4 +34,10 @@ export default {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 500px) {
+  .headcont {
+    display: block;
+    padding: 50px 20px;
+  }
+}
 </style>

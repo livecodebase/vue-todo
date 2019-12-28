@@ -1,6 +1,6 @@
 <template>
   <div class="searchcont">
-    <input @keyup.enter="addtodo" type="text" v-model="search" />
+    <input type="text" @keyup.enter="addtodo" v-model="search" />
     <button @click="addtodo">Add</button>
   </div>
 </template>
@@ -50,5 +50,22 @@ button:focus {
 }
 button:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .searchcont {
+    display: block;
+  }
+  input {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+  }
+  button {
+    height: 50px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 17px;
+  }
 }
 </style>

@@ -4,18 +4,18 @@
       v-for="todo in todos"
       :key="todo.id"
       class="todoitem"
-      v-bind:class="{ completed: todo.completed }"
+      :class="{ completed: todo.completed }"
     >
       <label class="checkmarkcnt">
         <input
           type="checkbox"
+          :checked="todo.completed"
           @change="togglecompleate(todo.id)"
-          v-bind:checked="todo.completed"
         />
         <span class="checkmark" />
       </label>
       <div class="todo-text">{{ todo.title }}</div>
-      <button @click="$emit('deltodo', todo.id)" class="close-btn">
+      <button class="close-btn" @click="$emit('deltodo', todo.id)">
         X
       </button>
     </div>
@@ -24,12 +24,11 @@
 
 <script>
 export default {
-  name: "todolist",
+  name: "Todolist",
+  props: ["todos"],
   data() {
     return {};
   },
-  props: ["todos"],
-
   methods: {
     togglecompleate(id) {
       this.todos.find(todo => {
@@ -142,5 +141,11 @@ export default {
 }
 .completed div {
   text-decoration: line-through;
+}
+@media screen and (max-width: 500px) {
+  .todoitem {
+    padding: 10px 20px;
+    margin: 10px;
+  }
 }
 </style>

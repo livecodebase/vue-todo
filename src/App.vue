@@ -13,6 +13,10 @@ import shortid from "shortid";
 
 export default {
   name: "App",
+  components: {
+    AppHeader,
+    Todos
+  },
   data() {
     return {
       todos: []
@@ -23,10 +27,6 @@ export default {
       const data = res.data.slice(0, 10);
       this.todos = data;
     });
-  },
-  components: {
-    AppHeader,
-    Todos
   },
   methods: {
     search(e) {
