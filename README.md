@@ -1,9 +1,3 @@
-![](https://zeit.co/api/www/avatar/c0ad6c0a8a4c58d7b4a20794ea40fdd5104f5d09?s=160)
-
-# Vue Todo App
-
-Live demo : - https://vue-todo-blush-eight.now.sh/
-
 ### Start app
 
 ##### Install all dependencies first
