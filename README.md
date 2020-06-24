@@ -1,4 +1,4 @@
-### Start app
+### Steps to Start app
 
 ##### Install all dependencies first
 
